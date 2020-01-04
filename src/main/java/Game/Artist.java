@@ -8,7 +8,6 @@ import java.util.Collections;
 import java.util.List;
 
 public class Artist extends Game {
-    private String whatToGuess;
 
     public Artist(String search, int rounds){
         super(search, rounds);
@@ -18,17 +17,26 @@ public class Artist extends Game {
     public void beginGame() {
         Collection<Track> tracks = generate();
         List<String> title = getTitleFromTracks(tracks);
+        List<String> artists = getArtistFromTracks(tracks);
         int possibleSongs = title.size();
         int rounds = getRounds();
         int min = Math.min(possibleSongs,rounds);
         for(int i =0; i<min;i++){
-            System.out.println(title.get(i));
+            String currentTitle = title.get(i);
+            String artist = artists.get(i);
+            try {
+                String url = getYoutubeLink(currentTitle, artist);
+                downloadYoutubeVideo(url);
+            }catch (Exception ignored){
+
+            }
+
         }
 
     }
 
     @Override
-    public Collection<Track> generate() {
+    protected Collection<Track> generate() {
         String key = getApiKEY();
         String search = getSearch();
         Collection<Track> songs = de.umass.lastfm.Artist.getTopTracks(search, key);

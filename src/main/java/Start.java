@@ -11,7 +11,6 @@ public class Start {
 
     public static void main(String[] args) {
         String[] validGameModes = {"artist", "charts", "tags"};
-        String[] validWhatToGuess = {"title", "artist"};
         System.out.println("Please select game mode: [" + validGameModes[0] + "] [" + validGameModes[1] + "] [" + validGameModes[2] + "]");
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine().toLowerCase();
@@ -22,7 +21,7 @@ public class Start {
             input = scanner.nextLine().toLowerCase();
         }
         String gameMode = input;
-        query(gameMode);
+        query(validGameModes, gameMode);
     }
 
     private static void query(String[] validGameModes, String gameMode){
@@ -39,30 +38,48 @@ public class Start {
     private static void askArtist(){
         System.out.println("Please enter artist name: ");
         Scanner scanner = new Scanner(System.in);
-        String input = scanner.nextLine();
+        String artist = scanner.nextLine();
         int rounds = askRounds();
-        Artist game = new Artist(input, rounds);
+        Artist game = new Artist(artist, rounds);
         game.beginGame();
     }
 
     private static void askCharts(){
-        System.out.println("Would you like ");
+        Guess guess = askGuess();
+        int rounds = askRounds();
+        Charts game = new Charts(guess,rounds);
+        game.beginGame();
+    }
+
+    private static void askTags(){
+        Guess guess = askGuess();
+        System.out.println("Please enter tag: ");
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+        int rounds = askRounds();
+        Tags game = new Tags(guess,input,rounds);
+        game.beginGame();
+
     }
 
     private static Guess askGuess(){
-        System.out.println("Would you like to guess the [artist] or the [title]?");
-        Scanner scanner = new Scanner(System.in);
-        //TODO
-        return null;
-
-
+        while (true) {
+            System.out.println("Would you like to guess the [artist] or the [title]?");
+            Scanner scanner = new Scanner(System.in);
+            String input = scanner.nextLine();
+            if(Guess.isValid(input)){
+                return Guess.getGuess(input);
+            }else{
+                System.out.println("Not valid input");
+            }
+        }
     }
 
     private static int askRounds(){
         int rounds;
         while(true){
             try{
-                System.out.println("Please enter a number");
+                System.out.println("Please enter the number of rounds: ");
                 Scanner scanner = new Scanner(System.in);
                 String input = scanner.nextLine();
                 rounds = Integer.parseInt(input);
@@ -74,24 +91,6 @@ public class Start {
         return rounds;
     }
 
-
-    private static void beginGame(String search, int rounds) {
-        Artist game = new Artist(search,rounds);
-        game.beginGame();
-    }
-
-
-    private static void beginGame(String[] validGameModes, String gameMode, String whatToGuess, String search, int rounds) {
-       if(gameMode.equals(validGameModes[1])) {
-           Charts game = new Charts(whatToGuess, search, rounds);
-       } else if(gameMode.equals(validGameModes[2])) {
-           Tags game = new Tags(whatToGuess, search, rounds);
-       }
-       else {
-           throw new RuntimeException("Invalid game mode");
-       }
-
-    }
 
     private static boolean validInput(String[] validGameModes, String input) {
             for (String gameMode : validGameModes) {
