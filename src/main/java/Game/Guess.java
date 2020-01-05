@@ -2,14 +2,10 @@ package Game;
 
 public enum Guess {
     ARTIST {
-        public boolean equals(String string) {
-            return string.toLowerCase().equals("artist");
-        }
+
     },
     TITLE {
-        public boolean equals(String string) {
-            return string.toLowerCase().equals("title");
-        }
+
     };
 
 
@@ -18,7 +14,7 @@ public enum Guess {
     }
 
     public static Guess getGuess(String string) {
-        if (ARTIST.equals(string)) {
+        if (string.toLowerCase().equals("artist")) {
             return Guess.ARTIST;
         } else {
             return Guess.TITLE;

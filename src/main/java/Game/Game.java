@@ -48,7 +48,10 @@ public abstract class Game {
             if (!validChars.contains(Character.toString(c))) {
                 break;
             }
-            niceTitle.append(c);
+        }
+        int length = niceTitle.length();
+        if (niceTitle.substring(length, length).equals(" ")) {
+            return niceTitle.substring(0, length);
         }
         return niceTitle.toString();
     }
@@ -85,17 +88,17 @@ public abstract class Game {
             System.out.println("Current score = " + score);
             System.out.println("Playing song " + i + " out of " + min);
             System.out.println("Type [skip] if you would like to skip");
-            String currentTitle = title.get(i).toLowerCase();
-            String currentArtist = artists.get(i).toLowerCase();
+            String currentTitle = title.get(i);
+            String currentArtist = artists.get(i);
             String previewURL = getPreviewURL(currentTitle, currentArtist);
             Audio audio = new Audio(previewURL);
             Thread thread = new Thread(audio);
             thread.start();
             String answer;
             if (guess.equals(Guess.ARTIST)) {
-                answer = currentArtist;
+                answer = currentArtist.toLowerCase();
             } else {
-                answer = getNiceString(currentTitle).toLowerCase();
+                answer = getNiceString(currentTitle.toLowerCase()).toLowerCase();
             }
             boolean won = false;
             while (!audio.getReset()) {
@@ -145,7 +148,10 @@ public abstract class Game {
         Gson gson = new Gson();
         Response responseJSON = gson.fromJson(JSON, Response.class);
         Data data = responseJSON.getData()[0];
-        return data.getPreview();
+        if (data != null) {
+            return data.getPreview();
+        }
+        throw new RuntimeException("Can't open song");
 
     }
 

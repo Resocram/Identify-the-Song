@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c68a70b-9ee5-482d-a1cf-60f1d9ce6479" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Audio/Audio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Game/Artists.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JSON/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JSON/Response.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -15,23 +11,14 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/ApiExample.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Game/ApiExample$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Game/ApiExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Game/Artist.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Game/Charts.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Game/Charts.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Game/Game$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Game/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Game/Tags.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Game/Tags.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Start.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/local/Song.mp4" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Game/ApiExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Game/Artist.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Game/Charts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game/Charts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Game/Tags.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game/Tags.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Game/Guess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game/Guess.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -208,6 +195,14 @@
       <option name="presentableId" value="Default" />
       <updated>1578116850087</updated>
     </task>
+    <task id="LOCAL-00001" summary="Finished game">
+      <created>1578210882369</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578210882369</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,16 +219,26 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Finished including API from deezer and audio playback. Game is properly working for Artists. Need to finish for charts and tags." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished including API from deezer and audio playback. Game is properly working for Artists. Need to finish for charts and tags." />
+    <MESSAGE value="Finished game" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished game" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Audio/Audio.java</url>
-          <line>47</line>
+          <line>48</line>
           <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Game/Game.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="64" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
