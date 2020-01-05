@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c68a70b-9ee5-482d-a1cf-60f1d9ce6479" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/local/Song.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Game/ApiExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Game/EmbedYoutube.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Audio/Audio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Game/Artists.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JSON/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JSON/Response.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -13,19 +14,22 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Game/Artist.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Game/Artist.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ApiExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Game/ApiExample$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Game/ApiExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Game/Artist.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Game/Charts.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Game/Charts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Game/Game$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Game/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Game/Game.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Game/Tags.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Game/Tags.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/Start.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Start.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Game/Artist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game/Artist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/local/Song.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Game/ApiExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Game/Artist.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Game/Charts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game/Charts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Game/Guess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game/Guess.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Game/Tags.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game/Tags.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Start.java" afterDir="false" />
     </list>
@@ -92,9 +96,11 @@
   <component name="ProjectId" id="1VuxbJyAlC3vdxWC2vB38gVSGjD" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="findjar.last.used.dir" value="$USER_HOME$" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -121,7 +127,7 @@
       <module name="Identify_the_Song.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Game.*" />
+          <option name="PATTERN" value="com.chillyfacts.com.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,12 +142,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Youtube" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Game.Youtube" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JSON.Test" />
       <module name="Identify_the_Song.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Game.*" />
+          <option name="PATTERN" value="JSON.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="my_main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.chillyfacts.com.my_main" />
+      <module name="Identify_the_Song.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.chillyfacts.com.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -170,10 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.Start" />
+        <item itemvalue="Application.my_main" />
         <item itemvalue="Application.ApiExample (1)" />
         <item itemvalue="Application.ApiExample" />
-        <item itemvalue="Application.Youtube" />
-        <item itemvalue="Application.Start" />
       </list>
     </recent_temporary>
   </component>
@@ -203,19 +223,24 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Finished including API from deezer and audio playback. Game is properly working for Artists. Need to finish for charts and tags." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished including API from deezer and audio playback. Game is properly working for Artists. Need to finish for charts and tags." />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Game/Game.java</url>
-          <line>91</line>
-          <option name="timeStamp" value="14" />
+          <url>file://$PROJECT_DIR$/src/main/java/Audio/Audio.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="59" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Identify_the_Song$Song.ic" NAME="Song Coverage Results" MODIFIED="1578118802815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Identify_the_Song$Start.ic" NAME="Start Coverage Results" MODIFIED="1578182900472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Identify_the_Song$Youtube.ic" NAME="Youtube Coverage Results" MODIFIED="1578134974501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Game.*</FILTER>
     </SUITE>
