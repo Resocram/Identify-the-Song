@@ -41,7 +41,7 @@ public abstract class Game {
     protected abstract Collection<Track> generate();
 
     protected String getNiceString(String title) {
-        String validChars = "abcdefghijklmnopqrstuvwxyz ',.!";
+        String validChars = "1234567890abcdefghijklmnopqrstuvwxyz ',.!";
         StringBuilder niceTitle = new StringBuilder();
         for (int i = 0; i < title.length(); i++) {
             char c = title.charAt(i);
@@ -141,7 +141,6 @@ public abstract class Game {
 
 
     protected String getPreviewURL(String title, String artist) {
-
         HttpResponse<String> response = Unirest.get("https://deezerdevs-deezer.p.rapidapi.com/search?q=" + title + "+" + artist)
                 .header("x-rapidapi-host", "deezerdevs-deezer.p.rapidapi.com")
                 .header("x-rapidapi-key", "ca78b3646fmsh0d4c6d4ced25555p16612ejsne9e69d87bcdd")
