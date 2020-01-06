@@ -11,14 +11,14 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/ApiExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Game/ApiExample$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Game/ApiExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Game/Game$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/local/Song.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Game/ApiExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Game/Charts.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Game/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Game/Guess$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Game/Guess$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Game/Guess$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Game/Guess$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Game/Guess.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/Game/Guess.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Game/Tags.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Start.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Game/Guess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game/Guess.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -202,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578210882369</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fixed minor bugs">
+      <created>1578216143560</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578216143560</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,7 +229,8 @@
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Finished including API from deezer and audio playback. Game is properly working for Artists. Need to finish for charts and tags." />
     <MESSAGE value="Finished game" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished game" />
+    <MESSAGE value="Fixed minor bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed minor bugs" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -237,8 +245,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Game/Game.java</url>
-          <line>92</line>
-          <option name="timeStamp" value="64" />
+          <line>102</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Game/Game.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="66" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
