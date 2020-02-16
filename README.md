@@ -1,4 +1,4 @@
-# Identify-the-Song
+# What's that tune?
 **Version 1.0.0**
 
 Identify the Song is a music recognition game that is played in the terminal. The program plays a 30s snippet of a song and you have to try
