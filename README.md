@@ -16,7 +16,7 @@ to guess either the artist or the title of the track.
 javac Start.java
 
 #Run Start.java
-javac Start
+java Start
 ```
 
 ## Starting the game
